@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "gender": "male",
+    "name": "Masum",
+    "contact": 1900000000,
+    "address": {
+      "city": "Gwenborough",
+      "zipCode": "92998-3874"
+    },
+    "photoUrl": "https://via.placeholder.com/600/92c952"
+  },
+  {
+    "id": 2,
+    "gender": "male",
+    "name": "Tanvir",
+    "address": {
+      "city": "Wisokyburgh",
+      "zipCode": "90566-7771"
+    },
+    "contact": 1711111111,
+    "photoUrl": "https://via.placeholder.com/600/771796"
+  },
+  {
+    "id": 3,
+    "gender": "male",
+    "name": "Rana",
+    "address": {
+      "city": "McKenziehaven",
+      "zipCode": "59590-4157"
+    },
+    "contact": 1333333333,
+    "photoUrl": "https://via.placeholder.com/600/f66b97"
+  },
+  {
+    "id": 4,
+    "gender": "female",
+    "name": "Lima",
+    "address": {
+      "city": "South Elvis",
+      "zipCode": "53919-4257"
+    },
+    "contact": 1444444444,
+    "photoUrl": "https://via.placeholder.com/600/d32776"
+  },
+  {
+    "id": 5,
+    "gender": "female",
+    "name": "Sabiha",
+    "address": {
+      "city": "Roscoeview",
+      "zipCode": 33263
+    },
+    "contact": 1555555555,
+    "photoUrl": "https://via.placeholder.com/150/24f355"
+  },
+  {
+    "id": 6,
+    "gender": "male",
+    "name": "Arif",
+    "address": {
+      "city": "South Christy",
+      "zipCode": "23505-1337"
+    },
+    "contact": 1666666666,
+    "photoUrl": "https://via.placeholder.com/150/56a8c2"
+  },
+  {
+    "id": 7,
+    "gender": "female",
+    "name": "Saba",
+    "address": {
+      "city": "Howemouth",
+      "zipCode": "58804-1099"
+    },
+    "contact": 1777777777,
+    "photoUrl": "https://via.placeholder.com/150/b0f7cc"
+  },
+  {
+    "id": 8,
+    "gender": "male",
+    "name": "Arman",
+    "address": {
+      "city": "Aliyaview",
+      "zipCode": 45169
+    },
+    "contact": 1888888888,
+    "photoUrl": "https://via.placeholder.com/150/54176f"
+  },
+  {
+    "id": 9,
+    "gender": "female",
+    "name": "Farjana",
+    "address": {
+      "city": "Bartholomebury",
+      "zipCode": "76495-3109"
+    },
+    "contact": 1999999999,
+    "photoUrl": "https://via.placeholder.com/150/810b14"
+  },
+  {
+    "id": 10,
+    "gender": "female",
+    "name": "Taniya",
+    "address": {
+      "city": "Lebsackbury",
+      "zipCode": 12345678985
+    },
+    "contact": "010-692-6593 x09125",
+    "photoUrl": "https://via.placeholder.com/150/1ee8a4"
+  }
+]
