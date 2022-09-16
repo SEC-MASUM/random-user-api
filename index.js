@@ -3,13 +3,17 @@ const cors = require("cors");
 const app = express();
 require("dotenv").config();
 
+const userRoutes = require("./routes/v1/user.route");
+
 const host = "localhost";
 const port = 5000;
 
 app.use(cors());
 
+app.use("/api/v1/user", userRoutes);
+
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Random user api server is running");
 });
 
 app.all("*", (req, res) => {
