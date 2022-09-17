@@ -96,7 +96,33 @@ module.exports.updateAUser = (req, res, next) => {
 };
 
 module.exports.updateMultiUser = (req, res, next) => {
-  res.send("Bulk-update User Api found");
+  const body = req.body;
+  const data = fs.readFileSync(FILENAME);
+  let result = JSON.parse(data);
+  body.forEach((element) => {
+    let index = result.indexOf();
+    result.find((user, index) => {
+      if (element.id === user.id) {
+        result[index] = element.data;
+        result[index].id = element.id;
+        return;
+      }
+    });
+  });
+  result = JSON.stringify(result);
+  fs.writeFile(FILENAME, result, (err) => {
+    if (err) {
+      res.status(err.code).send({
+        success: false,
+        error: "Internal server error",
+      });
+    } else {
+      res.status(200).send({
+        success: true,
+        message: "Successfully updated multiple user",
+      });
+    }
+  });
 };
 
 module.exports.deleteAUser = (req, res, next) => {
@@ -112,7 +138,6 @@ module.exports.deleteAUser = (req, res, next) => {
       return false;
     }
   });
-  // console.log(newResult);
   if (isFoundId) {
     newResult = JSON.stringify(newResult);
     fs.writeFile(FILENAME, newResult, (err) => {
@@ -134,5 +159,4 @@ module.exports.deleteAUser = (req, res, next) => {
       error: "User id not Found",
     });
   }
-  // res.send("Delete User Api found");
 };
