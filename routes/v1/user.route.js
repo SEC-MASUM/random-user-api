@@ -8,10 +8,10 @@ router.route("/all").get(userControllers.getAllUsers);
 
 router.route("/save").post(userControllers.saveAUser);
 
-router.route("/update").patch(userControllers.updateAUser);
+router.route("/update/:id").patch(userControllers.updateAUser);
 
 router.route("/bulk-update").patch(userControllers.updateMultiUser);
 
-router.route("/delete").delete(userControllers.deleteAUser);
+router.route("/delete/:id").delete(userControllers.deleteAUser);
 
 module.exports = router;
