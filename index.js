@@ -6,7 +6,7 @@ require("dotenv").config();
 const userRoutes = require("./routes/v1/user.route");
 
 const host = "localhost";
-const port = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
@@ -21,6 +21,6 @@ app.all("*", (req, res) => {
   res.send("No route found");
 });
 
-app.listen(port, () => {
-  console.log(`Server is running at  http://${host}:${port}`);
+app.listen(PORT, () => {
+  console.log(`Server is running at  http://${host}:${PORT}`);
 });
