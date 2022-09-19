@@ -30,11 +30,22 @@ module.exports.getAllUsers = (req, res, next) => {
       });
     } else {
       const result = JSON.parse(data);
-      res.status(200).send({
-        success: true,
-        message: "All users found",
-        data: result,
-      });
+      const query = req.query;
+      let { limit } = query;
+      if (Object.keys(query).length === 0 && query.constructor === Object) {
+        res.status(200).send({
+          success: true,
+          message: "Successfully user data found",
+          data: result,
+        });
+      } else {
+        res.status(200).send({
+          success: true,
+          message: "Successfully user data found",
+          data: result.slice(0, limit),
+        });
+      }
+      // console.log(limit, req.query);
     }
   });
 };
