@@ -1,6 +1,6 @@
 # random-user-api
 
-> GET /api/v1/user/all?limit=<number>
+> GET /api/v1/user/all?limit=number
 
 > GET /api/v1/user/random
 
